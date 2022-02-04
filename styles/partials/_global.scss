@@ -1,0 +1,120 @@
+@use "./font" as *;
+@use "./colors" as *;
+@use "./layout" as *;
+
+.nav-bar {
+  background-color: $bandsite-black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+  &__logo {
+    color: $white;
+    text-decoration: none;
+    font-size: 1.75rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      padding: 0;
+    }
+  }
+  &__list {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  &__link {
+    color: $mercury;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.125rem;
+    font-weight: 400;
+    margin: 0, auto;
+    padding-bottom: 0.5rem;
+    width: 100%;
+    text-align: center;
+  }
+  &__link:active {
+    color: $white;
+    font-weight: 600;
+    border-bottom: 0.25rem solid $white;
+  }
+  &__link:hover {
+    color: $white;
+    border-bottom: 0.25rem solid $white;
+  }
+}
+
+.footer {
+  &__container {
+    background-color: $bandsite-black;
+    color: $white;
+  }
+  &__card {
+    @include layout;
+    display: flex;
+    flex-direction: column;
+  }
+  &__header {
+    @include section-header;
+    @include padding-headline;
+  }
+  &__icons {
+    display: inline-flex;
+    width: 45%;
+  }
+  &__icons--link {
+    margin-right: 2rem;
+  }
+  &__contact {
+    @include footer-copy;
+    font-weight: 600;
+    padding-top: 1rem;
+    @media screen and (min-width: 768px) {
+      padding-top: 2.25rem;
+    }
+    display: flex;
+    flex-direction: column;
+  }
+  &__email {
+    text-decoration: none;
+    color: inherit;
+    @include footer-copy;
+  }
+  &__email--last {
+    text-decoration: none;
+    color: inherit;
+    @include footer-copy;
+    padding-bottom: 4rem;
+  }
+  &__contact--info-adr {
+    @include footer-copy;
+    @include padding-component;
+    width: 10rem;
+  }
+  &__contact--info {
+    display: flex;
+    flex-direction: column;
+    @include padding-component;
+  }
+  &__contact--info-job {
+    @include footer-copy;
+  }
+  &__contact--info-area {
+    @include footer-copy;
+  }
+  &__logo {
+    @include layout;
+    text-decoration: none;
+    font-size: 1.75rem;
+    color: $white;
+  }
+  &__copyright {
+    @include footer-copy;
+    @include layout;
+    @include padding-component;
+  }
+}

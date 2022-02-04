@@ -1,0 +1,101 @@
+@use "./partials/reset" as *;
+@use "./partials/global" as *;
+@use "./partials/font" as *;
+@use "./partials/colors" as *;
+@use "./partials/layout" as *;
+
+.hero {
+  &__image {
+    background-image: url(../assets/images/hero-bio.jpg);
+    width: 100vw;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+  }
+  &__text-box {
+    position: relative;
+  }
+  &__text {
+    color: $white;
+    @include layout;
+    @include page-header;
+  }
+  &__overlay {
+    width: 100vw;
+    height: 50vh;
+    background: $bandsite-black;
+    opacity: 0.5;
+    position: absolute;
+  }
+}
+
+.about {
+  &__header {
+    @include section-header;
+    @include layout;
+    @include padding-headline;
+    color: $bandsite-black;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    @include layout;
+    color: $bandsite-black;
+  }
+  &__image {
+    width: 100%;
+    height: 50vw;
+  }
+  &__quote {
+    @include subheader;
+    @include padding-component;
+    font-weight: 600;
+  }
+  &__quote--name {
+    @include subheader;
+    font-weight: 600;
+  }
+}
+
+.bio {
+  &__header {
+    @include layout;
+    @include subheader;
+    @include padding-headline;
+    color: $bandsite-black;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    @include layout;
+    color: $bandsite-black;
+  }
+  &__para--one {
+    @include body-copy;
+  }
+  &__para--two {
+    @include body-copy;
+    @include padding-component;
+  }
+}
+
+.gallery {
+  background-color: $alabaster;
+  &__header {
+    @include section-header;
+    @include layout;
+    @include padding-headline;
+    color: $bandsite-black;
+  }
+  &__container {
+    @include layout;
+  }
+  &__image {
+    width: 100%;
+    @include padding-images;
+  }
+}

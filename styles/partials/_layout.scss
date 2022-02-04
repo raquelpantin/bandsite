@@ -1,0 +1,34 @@
+@mixin padding-headline {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  @media screen and (min-width: 768px) {
+    padding-top: 3rem;
+    padding-bottom: 2.25rem;
+  }
+}
+
+@mixin padding-component {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  @media screen and (min-width: 768px) {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+  }
+}
+
+@mixin padding-images {
+  padding-bottom: 1rem;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 2.25rem;
+  }
+}
+
+@mixin layout {
+  margin: 0 1rem;
+  @media screen and (min-width: 768px) {
+    margin: 0 2.188rem;
+  }
+  @media screen and (min-width: 1280x) {
+    margin: 0 1rem;
+  }
+}
