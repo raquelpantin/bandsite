@@ -390,8 +390,18 @@ body {
   align-items: center;
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .hero__image {
+    height: 55vw;
+  }
+}
 .hero__text-box {
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .hero__text-box {
+    padding-top: 3rem;
+  }
 }
 .hero__text {
   color: #ffffff;
@@ -423,6 +433,11 @@ body {
   background: #323232;
   opacity: 0.5;
   position: absolute;
+}
+@media screen and (min-width: 768px) {
+  .hero__overlay {
+    height: 55vw;
+  }
 }
 
 .about__header {
