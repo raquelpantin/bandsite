@@ -18,13 +18,19 @@
     padding-bottom: 0.5rem;
     text-align: center;
     @media screen and (min-width: 768px) {
-      padding: 0;
+      padding-left: 2.25rem;
+      font-size: 1.25rem;
+      padding-bottom: 1rem;
     }
   }
   &__list {
     display: flex;
     width: 100%;
     justify-content: space-around;
+    @media screen and (min-width: 768px) {
+      width: auto;
+      margin-top: 1rem;
+    }
   }
   &__link {
     color: $mercury;
@@ -36,6 +42,11 @@
     padding-bottom: 0.5rem;
     width: 100%;
     text-align: center;
+    @media screen and (min-width: 768px) {
+      font-size: 0.65rem;
+      padding-bottom: 1rem;
+      margin-left: 3rem;
+    }
   }
   &__link:active {
     color: $white;

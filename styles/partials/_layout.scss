@@ -26,9 +26,9 @@
 @mixin layout {
   margin: 0 1rem;
   @media screen and (min-width: 768px) {
-    margin: 0 2.188rem;
+    margin: 0 2.25rem;
   }
   @media screen and (min-width: 1280x) {
-    margin: 0 1rem;
+    margin: 0 auto;
   }
 }
