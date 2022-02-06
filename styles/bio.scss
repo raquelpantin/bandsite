@@ -93,19 +93,37 @@
     @include subheader;
     @include padding-headline;
     color: $bandsite-black;
+    @media screen and (min-width: 768px) {
+      padding-left: 3.5rem;
+      padding-bottom: 1rem;
+      font-weight: 600;
+    }
   }
   &__container {
     display: flex;
     flex-direction: column;
     @include layout;
     color: $bandsite-black;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      padding-left: 3.5rem;
+      padding-right: 3.5rem;
+    }
   }
   &__para--one {
     @include body-copy;
+    @media screen and (min-width: 768px) {
+      width: 47%;
+    }
   }
   &__para--two {
     @include body-copy;
     @include padding-component;
+    @media screen and (min-width: 768px) {
+      padding-top: 0;
+      padding-left: 1.5rem;
+      width: 48%;
+    }
   }
 }
 
