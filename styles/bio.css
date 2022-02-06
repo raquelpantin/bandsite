@@ -182,6 +182,11 @@ body {
   background-color: #323232;
   color: #ffffff;
 }
+@media screen and (min-width: 768px) {
+  .footer__tblt-dt {
+    display: flex;
+  }
+}
 .footer__card {
   margin: 0 1rem;
   display: flex;
@@ -195,6 +200,73 @@ body {
 @media screen and (min-width: 1280x) {
   .footer__card {
     margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__card {
+    flex-direction: row;
+    position: relative;
+  }
+}
+.footer__card--cam {
+  margin: 0 1rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__card--cam {
+    margin: 0 2.25rem;
+  }
+}
+@media screen and (min-width: 1280x) {
+  .footer__card--cam {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__card--cam {
+    display: flex;
+    flex-direction: column;
+    margin-right: 3rem;
+  }
+}
+.footer__card--pearl {
+  margin: 0 1rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__card--pearl {
+    margin: 0 2.25rem;
+  }
+}
+@media screen and (min-width: 1280x) {
+  .footer__card--pearl {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__card--pearl {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 3rem;
+  }
+}
+.footer__card--carson {
+  margin: 0 1rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__card--carson {
+    margin: 0 2.25rem;
+  }
+}
+@media screen and (min-width: 1280x) {
+  .footer__card--carson {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__card--carson {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
   }
 }
 .footer__header {
@@ -221,6 +293,13 @@ body {
   display: inline-flex;
   width: 45%;
 }
+@media screen and (min-width: 768px) {
+  .footer__icons {
+    height: 100%;
+    margin-top: 4rem;
+    margin-left: 2rem;
+  }
+}
 .footer__icons--link {
   margin-right: 2rem;
 }
@@ -230,8 +309,6 @@ body {
   font-weight: 400;
   font-weight: 600;
   padding-top: 1rem;
-  display: flex;
-  flex-direction: column;
 }
 @media screen and (min-width: 768px) {
   .footer__contact {
@@ -242,7 +319,8 @@ body {
 }
 @media screen and (min-width: 768px) {
   .footer__contact {
-    padding-top: 2.25rem;
+    font-weight: 600;
+    padding-top: 0;
   }
 }
 .footer__email {
@@ -266,12 +344,18 @@ body {
   line-height: 1.125rem;
   font-weight: 400;
   padding-bottom: 4rem;
+  display: flex;
 }
 @media screen and (min-width: 768px) {
   .footer__email--last {
     font-size: 0.875rem;
     line-height: 1.25rem;
     font-weight: 400;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__email--last {
+    padding-bottom: 1rem;
   }
 }
 .footer__contact--info-adr {
@@ -293,6 +377,11 @@ body {
   .footer__contact--info-adr {
     padding-top: 2.25rem;
     padding-bottom: 2.25rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__contact--info-adr {
+    width: 12rem;
   }
 }
 .footer__contact--info {
@@ -345,6 +434,25 @@ body {
 @media screen and (min-width: 1280x) {
   .footer__logo {
     margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__logo {
+    display: none;
+  }
+}
+.footer__logo--tblt-dt {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .footer__logo--tblt-dt {
+    display: flex;
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: #ffffff;
+    position: absolute;
+    top: 4rem;
+    right: 0rem;
   }
 }
 .footer__copyright {

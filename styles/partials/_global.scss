@@ -64,10 +64,44 @@
     background-color: $bandsite-black;
     color: $white;
   }
+  &__tblt-dt {
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
   &__card {
     @include layout;
     display: flex;
     flex-direction: column;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      position: relative;
+    }
+    &--cam {
+      @include layout;
+      @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        margin-right: 3rem;
+      }
+    }
+    &--pearl {
+      @include layout;
+      @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 3rem;
+      }
+    }
+    &--carson {
+      @include layout;
+      @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+      }
+    }
   }
   &__header {
     @include section-header;
@@ -76,6 +110,11 @@
   &__icons {
     display: inline-flex;
     width: 45%;
+    @media screen and (min-width: 768px) {
+      height: 100%;
+      margin-top: 4rem;
+      margin-left: 2rem;
+    }
   }
   &__icons--link {
     margin-right: 2rem;
@@ -85,10 +124,9 @@
     font-weight: 600;
     padding-top: 1rem;
     @media screen and (min-width: 768px) {
-      padding-top: 2.25rem;
+      font-weight: 600;
+      padding-top: 0;
     }
-    display: flex;
-    flex-direction: column;
   }
   &__email {
     text-decoration: none;
@@ -100,11 +138,18 @@
     color: inherit;
     @include footer-copy;
     padding-bottom: 4rem;
+    display: flex;
+    @media screen and (min-width: 768px) {
+      padding-bottom: 1rem;
+    }
   }
   &__contact--info-adr {
     @include footer-copy;
     @include padding-component;
     width: 10rem;
+    @media screen and (min-width: 768px) {
+      width: 12rem;
+    }
   }
   &__contact--info {
     display: flex;
@@ -122,6 +167,21 @@
     text-decoration: none;
     font-size: 1.75rem;
     color: $white;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+    &--tblt-dt {
+      display: none;
+      @media screen and (min-width: 768px) {
+        display: flex;
+        text-decoration: none;
+        font-size: 1.25rem;
+        color: $white;
+        position: absolute;
+        top: 4rem;
+        right: 0rem;
+      }
+    }
   }
   &__copyright {
     @include footer-copy;
