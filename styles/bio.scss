@@ -170,11 +170,18 @@
     @include layout;
     @include padding-headline;
     color: $bandsite-black;
+    @media screen and (min-width: 1280px) {
+      margin-left: 7.688rem;
+    }
   }
   &__container {
     @include layout;
     @media screen and (min-width: 768px) {
       padding-bottom: 0.688rem;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-left: 7.688rem;
+      margin-right: 7.688rem;
     }
     &-row {
       @media screen and (min-width: 768px) {

@@ -863,6 +863,11 @@ body {
     padding-bottom: 2.25rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  .gallery__header {
+    margin-left: 7.688rem;
+  }
+}
 .gallery__container {
   margin: 0 1rem;
 }
@@ -879,6 +884,12 @@ body {
 @media screen and (min-width: 768px) {
   .gallery__container {
     padding-bottom: 0.688rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .gallery__container {
+    margin-left: 7.688rem;
+    margin-right: 7.688rem;
   }
 }
 @media screen and (min-width: 768px) {
