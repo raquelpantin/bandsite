@@ -503,12 +503,23 @@ body {
     height: 55vw;
   }
 }
+@media screen and (min-width: 1280px) {
+  .hero__image {
+    height: 45vw;
+  }
+}
 .hero__text-box {
   position: relative;
 }
 @media screen and (min-width: 768px) {
   .hero__text-box {
     padding-top: 3rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__text-box {
+    padding-top: 0;
+    margin: auto 5.438rem;
   }
 }
 .hero__text {
@@ -545,6 +556,11 @@ body {
 @media screen and (min-width: 768px) {
   .hero__overlay {
     height: 55vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__overlay {
+    height: 45vw;
   }
 }
 
