@@ -661,9 +661,15 @@ body {
 @media screen and (min-width: 768px) {
   .about__quote {
     padding-left: 3.5rem;
-    padding-right: 3.5rem;
+    padding-right: 2rem;
     font-weight: 600;
     padding-bottom: 0.5rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about__quote {
+    padding-left: 10.875rem;
+    width: 76%;
   }
 }
 .about__quote--name {
@@ -686,6 +692,12 @@ body {
     font-size: 0.875rem;
     line-height: 1.375rem;
     font-weight: 600;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about__quote--name {
+    padding-left: 10.875rem;
+    width: 78%;
   }
 }
 
@@ -728,6 +740,11 @@ body {
     font-weight: 600;
   }
 }
+@media screen and (min-width: 1280px) {
+  .bio__header {
+    padding-left: 10.875rem;
+  }
+}
 .bio__container {
   display: flex;
   flex-direction: column;
@@ -751,6 +768,11 @@ body {
     padding-right: 3.5rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  .bio__container {
+    padding-left: 10.875rem;
+  }
+}
 .bio__para--one {
   font-size: 0.813rem;
   line-height: 1.125rem;
@@ -765,7 +787,12 @@ body {
 }
 @media screen and (min-width: 768px) {
   .bio__para--one {
-    width: 47%;
+    width: 48%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .bio__para--one {
+    width: 43%;
   }
 }
 .bio__para--two {
@@ -792,7 +819,12 @@ body {
   .bio__para--two {
     padding-top: 0;
     padding-left: 1.5rem;
-    width: 48%;
+    width: 52%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .bio__para--two {
+    width: 45%;
   }
 }
 
