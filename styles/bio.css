@@ -601,6 +601,11 @@ body {
     padding-bottom: 2.25rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  .about__header {
+    margin-left: 7.688rem;
+  }
+}
 .about__container {
   display: flex;
   flex-direction: column;
@@ -625,6 +630,11 @@ body {
   .about__image {
     padding: 0rem 3.5rem;
     height: 40vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about__image {
+    padding: 0rem 10.875rem;
   }
 }
 .about__quote {
