@@ -187,6 +187,11 @@ body {
   background-color: #323232;
   color: #ffffff;
 }
+@media screen and (min-width: 1280px) {
+  .footer__container {
+    padding-left: 5.438rem;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer__tblt-dt {
     display: flex;
@@ -458,6 +463,11 @@ body {
     position: absolute;
     top: 4rem;
     right: 0rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__logo--tblt-dt {
+    right: 6rem;
   }
 }
 .footer__copyright {
