@@ -137,9 +137,30 @@
   }
   &__container {
     @include layout;
+    @media screen and (min-width: 768px) {
+      padding-bottom: 0.688rem;
+    }
+    &-row {
+      @media screen and (min-width: 768px) {
+        display: flex;
+      }
+    }
   }
   &__image {
     width: 100%;
     @include padding-images;
+    @media screen and (min-width: 768px) {
+      padding-bottom: 1.5rem;
+      padding-right: 1.5rem;
+      width: 33%;
+    }
+    &--last {
+      width: 100%;
+      @include padding-images;
+      @media screen and (min-width: 768px) {
+        padding-bottom: 1.5rem;
+        width: 33%;
+      }
+    }
   }
 }
