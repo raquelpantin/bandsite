@@ -13,7 +13,7 @@
     background-size: cover;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    // align-items: center;
     position: relative;
     @media screen and (min-width: 768px) {
       height: 55vw;
@@ -36,6 +36,12 @@
     color: $white;
     @include layout;
     @include page-header;
+    &--album {
+      color: $white;
+      @include layout;
+      @include subheader;
+      @include padding-headline;
+    }
   }
   &__overlay {
     width: 100vw;
