@@ -500,4 +500,81 @@ body {
     padding-top: 2.25rem;
     padding-bottom: 2.25rem;
   }
+}
+
+.hero__image {
+  background-image: url(../assets/images/hero-bio.jpg);
+  width: 100vw;
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .hero__image {
+    height: 55vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__image {
+    height: 45vw;
+  }
+}
+.hero__text-box {
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .hero__text-box {
+    padding-top: 3rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__text-box {
+    padding-top: 0;
+    margin: auto 5.438rem;
+  }
+}
+.hero__text {
+  color: #ffffff;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .hero__text {
+    margin: 0 2.25rem;
+  }
+}
+@media screen and (min-width: 1280x) {
+  .hero__text {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__text {
+    font-size: 3.75rem;
+    line-height: 4.25rem;
+    font-weight: 600;
+  }
+}
+.hero__overlay {
+  width: 100vw;
+  height: 50vh;
+  background: #323232;
+  opacity: 0.5;
+  position: absolute;
+}
+@media screen and (min-width: 768px) {
+  .hero__overlay {
+    height: 55vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__overlay {
+    height: 45vw;
+  }
 }/*# sourceMappingURL=shows.css.map */
