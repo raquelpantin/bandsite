@@ -130,18 +130,15 @@ body {
   }
 }
 .nav-bar__logo {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 1.75rem;
-  padding-top: 1rem;
-  padding-bottom: 0.5rem;
-  text-align: center;
+  height: 1.25rem;
+  width: 7.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
 @media screen and (min-width: 768px) {
   .nav-bar__logo {
-    padding-left: 2.25rem;
-    font-size: 1.25rem;
-    padding-bottom: 1rem;
+    margin-left: 2.25rem;
+    margin-bottom: 1rem;
   }
 }
 .nav-bar__list {
@@ -432,9 +429,8 @@ body {
 }
 .footer__logo {
   margin: 0 1rem;
-  text-decoration: none;
-  font-size: 1.75rem;
-  color: #ffffff;
+  height: 1.25rem;
+  width: 7.5rem;
 }
 @media screen and (min-width: 768px) {
   .footer__logo {

@@ -14,16 +14,13 @@
     padding-left: 5.438rem;
   }
   &__logo {
-    color: $white;
-    text-decoration: none;
-    font-size: 1.75rem;
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
-    text-align: center;
+    height: 1.25rem;
+    width: 7.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
     @media screen and (min-width: 768px) {
-      padding-left: 2.25rem;
-      font-size: 1.25rem;
-      padding-bottom: 1rem;
+      margin-left: 2.25rem;
+      margin-bottom: 1rem;
     }
   }
   &__list {
@@ -170,9 +167,8 @@
   }
   &__logo {
     @include layout;
-    text-decoration: none;
-    font-size: 1.75rem;
-    color: $white;
+    height: 1.25rem;
+    width: 7.5rem;
     @media screen and (min-width: 768px) {
       display: none;
     }
