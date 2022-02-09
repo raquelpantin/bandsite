@@ -8,7 +8,7 @@
   &__image {
     background-image: url(../assets/images/hero-shows.jpg);
     width: 100vw;
-    height: 50vh;
+    height: 70vh;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -43,9 +43,15 @@
       @include padding-headline;
     }
   }
+  &__music {
+    @include layout;
+    @include padding-component;
+    width: 86%;
+    height: 35vh;
+  }
   &__overlay {
     width: 100vw;
-    height: 50vh;
+    height: 70vh;
     background: $bandsite-black;
     opacity: 0.5;
     position: absolute;
