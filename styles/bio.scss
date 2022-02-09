@@ -207,3 +207,15 @@
     }
   }
 }
+
+.comment {
+  &__header {
+    @include section-header;
+    @include layout;
+    @include padding-headline;
+    color: $bandsite-black;
+    @media screen and (min-width: 1280px) {
+      margin-left: 7.688rem;
+    }
+  }
+}

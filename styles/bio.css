@@ -937,4 +937,42 @@ body {
     padding-bottom: 1.5rem;
     width: 33%;
   }
+}
+
+.comment__header {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  margin: 0 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  color: #323232;
+}
+@media screen and (min-width: 768px) {
+  .comment__header {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 768px) {
+  .comment__header {
+    margin: 0 2.25rem;
+  }
+}
+@media screen and (min-width: 1280x) {
+  .comment__header {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .comment__header {
+    padding-top: 3rem;
+    padding-bottom: 2.25rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comment__header {
+    margin-left: 7.688rem;
+  }
 }/*# sourceMappingURL=bio.css.map */
