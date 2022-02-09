@@ -57,3 +57,11 @@
     }
   }
 }
+
+.shows {
+  &__header {
+    @include layout;
+    @include section-header;
+    @include padding-headline;
+  }
+}

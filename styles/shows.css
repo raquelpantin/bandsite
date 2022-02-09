@@ -609,4 +609,36 @@ body {
   .hero__overlay {
     height: 45vw;
   }
+}
+
+.shows__header {
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .shows__header {
+    margin: 0 2.25rem;
+  }
+}
+@media screen and (min-width: 1280x) {
+  .shows__header {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .shows__header {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 768px) {
+  .shows__header {
+    padding-top: 3rem;
+    padding-bottom: 2.25rem;
+  }
 }/*# sourceMappingURL=shows.css.map */
