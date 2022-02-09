@@ -939,6 +939,19 @@ body {
   }
 }
 
+.comment__container {
+  margin: 0 1rem;
+}
+@media screen and (min-width: 768px) {
+  .comment__container {
+    margin: 0 2.25rem;
+  }
+}
+@media screen and (min-width: 1280x) {
+  .comment__container {
+    margin: 0 auto;
+  }
+}
 .comment__header {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -974,5 +987,91 @@ body {
 @media screen and (min-width: 1280px) {
   .comment__header {
     margin-left: 7.688rem;
+  }
+}
+.comment__name {
+  font-size: 0.813rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  border-radius: 4px;
+  border: 1px solid #e1e1e1;
+  color: #323232;
+  background-color: #fafafa;
+}
+@media screen and (min-width: 768px) {
+  .comment__name {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+  }
+}
+.comment__text {
+  font-size: 0.813rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  border-radius: 4px;
+  border: 1px solid #e1e1e1;
+  color: #323232;
+  background-color: #fafafa;
+  width: 80%;
+  height: 5rem;
+}
+@media screen and (min-width: 768px) {
+  .comment__text {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+  }
+}
+
+::-moz-placeholder {
+  font-size: 0.813rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  color: #323232;
+}
+
+:-ms-input-placeholder {
+  font-size: 0.813rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  color: #323232;
+}
+
+::placeholder {
+  font-size: 0.813rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  color: #323232;
+}
+@media screen and (min-width: 768px) {
+  ::-moz-placeholder {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+  }
+  :-ms-input-placeholder {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+  }
+  ::placeholder {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+  }
+}
+
+label {
+  font-size: 0.625rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  color: #afafaf;
+}
+@media screen and (min-width: 768px) {
+  label {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    font-weight: 700;
   }
 }/*# sourceMappingURL=bio.css.map */
