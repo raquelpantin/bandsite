@@ -593,9 +593,6 @@ body {
     padding-bottom: 2.25rem;
   }
 }
-.hero__music {
-  width: 100%;
-}
 .hero__overlay {
   width: 100vw;
   height: 50vh;
