@@ -194,3 +194,15 @@
     @include padding-component;
   }
 }
+
+.divider {
+  border-top: 1px solid $mercury;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  @media screen and (min-width: 768px) {
+    margin: 0 2.25rem;
+  }
+  @media screen and (min-width: 1280x) {
+    margin: 0 auto;
+  }
+}
