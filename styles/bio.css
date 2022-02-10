@@ -993,26 +993,29 @@ body {
   }
 }
 .comment__container {
+  display: flex;
+}
+.comment__card {
   margin: 0 1rem;
   display: flex;
   flex-direction: column;
   width: 60%;
 }
 @media screen and (min-width: 768px) {
-  .comment__container {
+  .comment__card {
     margin: 0 2.25rem;
   }
 }
 @media screen and (min-width: 1280x) {
-  .comment__container {
+  .comment__card {
     margin: 0 auto;
   }
 }
-.comment__container-name {
+.comment__card-name {
   display: flex;
   flex-direction: column;
 }
-.comment__container-text {
+.comment__card-text {
   display: flex;
   flex-direction: column;
 }

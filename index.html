@@ -128,29 +128,32 @@
       </section>
       <section>
         <h2 class="comment__header">Join the Conversation</h2>
-        <div class="avatar__image"></div>
-        <form>
-          <div class="comment__container">
-            <div class="comment__container-name">
-              <label for="comment__name">NAME</label>
-              <input
-                type="text"
-                class="comment__name"
-                name="name"
-                placeholder="Enter your name"
-              />
+        <div class="comment__container">
+          <div class="avatar__image"></div>
+          <form>
+            <div class="comment__card">
+              <div class="comment__card-name">
+                <label for="comment__name">NAME</label>
+                <input
+                  type="text"
+                  class="comment__name"
+                  name="name"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="comment__card-text">
+                <label for="comment__text">COMMENT</label>
+                <input
+                  type="text"
+                  class="comment__text"
+                  name="text"
+                  placeholder="Add a new comment"
+                />
+              </div>
+              <input class="comment__card-btn" type="submit" value="COMMENT" />
             </div>
-            <div class="comment__container-text">
-              <label for="comment__text">COMMENT</label>
-              <input
-                type="text"
-                class="comment__text"
-                name="text"
-                placeholder="Add a new comment"
-              />
-            </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </section>
     </main>
     <footer>
