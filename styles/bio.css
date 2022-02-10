@@ -502,6 +502,7 @@ body {
   border-top: 1px solid #e1e1e1;
   margin-left: 1rem;
   margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
   .divider {
