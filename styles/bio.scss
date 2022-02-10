@@ -233,12 +233,11 @@
   }
   &__container {
     display: flex;
+    justify-content: center;
   }
   &__card {
     display: flex;
     flex-direction: column;
-    margin-right: 1rem;
-    width: 100%;
 
     &-name {
       display: flex;
@@ -256,6 +255,7 @@
       background-color: $bandsite-black;
       border-radius: 4px;
       margin-bottom: 0.75rem;
+      margin-right: 1rem;
     }
   }
   &__name {
@@ -266,7 +266,7 @@
     background-color: $alabaster;
     margin-bottom: 0.75rem;
     padding: 0.6rem;
-    width: 15rem;
+    width: 75vw;
   }
   &__text {
     @include body-copy;
@@ -278,7 +278,7 @@
     margin-bottom: 0.75rem;
     padding: 0.6rem;
     height: 6rem;
-    width: 15rem;
+    width: 75vw;
   }
 }
 

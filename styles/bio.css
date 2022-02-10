@@ -997,12 +997,11 @@ body {
 }
 .comment__container {
   display: flex;
+  justify-content: center;
 }
 .comment__card {
   display: flex;
   flex-direction: column;
-  margin-right: 1rem;
-  width: 100%;
 }
 .comment__card-name {
   display: flex;
@@ -1022,6 +1021,7 @@ body {
   background-color: #323232;
   border-radius: 4px;
   margin-bottom: 0.75rem;
+  margin-right: 1rem;
 }
 @media screen and (min-width: 768px) {
   .comment__card-btn {
@@ -1040,7 +1040,7 @@ body {
   background-color: #fafafa;
   margin-bottom: 0.75rem;
   padding: 0.6rem;
-  width: 15rem;
+  width: 75vw;
 }
 @media screen and (min-width: 768px) {
   .comment__name {
@@ -1061,7 +1061,7 @@ body {
   margin-bottom: 0.75rem;
   padding: 0.6rem;
   height: 6rem;
-  width: 15rem;
+  width: 75vw;
 }
 @media screen and (min-width: 768px) {
   .comment__text {
