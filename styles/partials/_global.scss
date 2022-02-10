@@ -206,3 +206,14 @@
     margin: 0 auto;
   }
 }
+
+.divider-first {
+  border-top: 1px solid $mercury;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    margin: 0 2.25rem;
+  }
+  @media screen and (min-width: 1280x) {
+    margin: 0 auto;
+  }
+}

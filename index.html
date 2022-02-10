@@ -128,49 +128,52 @@
       </section>
       <section>
         <h2 class="comment__header">Join the Conversation</h2>
-        <div class="comment__container">
-          <div class="avatar__image"></div>
-          <form>
-            <div class="comment__card">
-              <div class="comment__card-name">
-                <label for="comment__name">NAME</label>
+        <div class="comment__container-all">
+          <div class="comment__container">
+            <div class="avatar__image"></div>
+            <form>
+              <div class="comment__card">
+                <div class="comment__card-name">
+                  <label for="comment__name">NAME</label>
+                  <input
+                    type="text"
+                    class="comment__name"
+                    name="name"
+                    placeholder="Enter your name"
+                  />
+                </div>
+                <div class="comment__card-text">
+                  <label for="comment__text">COMMENT</label>
+                  <textarea
+                    class="comment__text"
+                    name="text"
+                    placeholder="Add a new comment"
+                  ></textarea>
+                </div>
                 <input
-                  type="text"
-                  class="comment__name"
-                  name="name"
-                  placeholder="Enter your name"
+                  class="comment__card-btn"
+                  type="submit"
+                  value="COMMENT"
                 />
               </div>
-              <div class="comment__card-text">
-                <label for="comment__text">COMMENT</label>
-                <textarea
-                  class="comment__text"
-                  name="text"
-                  placeholder="Add a new comment"
-                ></textarea>
-              </div>
-              <input class="comment__card-btn" type="submit" value="COMMENT" />
-            </div>
-          </form>
-        </div>
-      </section>
-      <section>
-        <div class="user-comment__container">
-          <div class="no-avatar__image"></div>
-          <div class="user-comment__card">
-            <div class="user-comment__list">
-              <ul>
+            </form>
+          </div>
+          <hr class="divider-first" />
+          <div class="user-comment__container">
+            <div class="no-avatar__image"></div>
+            <div class="user-comment__card">
+              <ul class="user-comment__list">
                 <li class="user-comment__list-item">Connor Walton</li>
-                <li class="user-comment__list-item">02/17/2021</li>
+                <li class="user-comment__list-item--date">02/17/2021</li>
               </ul>
-            </div>
-            <div class="user-comment__input">
-              <p>
-                This is art. This is inexplicable magic expressed in the purest
-                way, everything that makes up this majestic work deserves
-                reverence. Let us appreciate this for what it is and what it
-                contains.
-              </p>
+              <div class="user-comment__input">
+                <p>
+                  This is art. This is inexplicable magic expressed in the
+                  purest way, everything that makes up this majestic work
+                  deserves reverence. Let us appreciate this for what it is and
+                  what it contains.
+                </p>
+              </div>
             </div>
           </div>
         </div>

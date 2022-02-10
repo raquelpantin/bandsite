@@ -514,6 +514,21 @@ body {
   }
 }
 
+.divider-first {
+  border-top: 1px solid #e1e1e1;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .divider-first {
+    margin: 0 2.25rem;
+  }
+}
+@media screen and (min-width: 1280x) {
+  .divider-first {
+    margin: 0 auto;
+  }
+}
+
 .hero__image {
   background-image: url(../assets/images/hero-bio.jpg);
   width: 100vw;
@@ -953,7 +968,6 @@ body {
 
 .avatar__image {
   margin: 0 1rem;
-  margin-right: 0;
   background-image: url(../assets/images/Mohan-muruge.jpg);
   width: 2.25rem;
   height: 2.25rem;
@@ -962,6 +976,7 @@ body {
   background-position: top left;
   margin-top: 1.5rem;
   margin-right: 0.75rem;
+  margin-left: 0;
 }
 @media screen and (min-width: 768px) {
   .avatar__image {
@@ -1009,6 +1024,22 @@ body {
 @media screen and (min-width: 1280px) {
   .comment__header {
     margin-left: 7.688rem;
+  }
+}
+.comment__container-all {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 1rem;
+}
+@media screen and (min-width: 768px) {
+  .comment__container-all {
+    margin: 0 2.25rem;
+  }
+}
+@media screen and (min-width: 1280x) {
+  .comment__container-all {
+    margin: 0 auto;
   }
 }
 .comment__container {
@@ -1138,4 +1169,48 @@ label {
     line-height: 1.25rem;
     font-weight: 700;
   }
+}
+
+.no-avatar__image {
+  margin-right: 0.75rem;
+  margin-left: 0;
+  margin-top: 1rem;
+  background-color: #e1e1e1;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.user-comment__container {
+  display: flex;
+}
+.user-comment__card {
+  display: flex;
+  flex-direction: column;
+}
+.user-comment__list {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .user-comment__list {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+  }
+}
+.user-comment__list-item {
+  list-style: none;
+  font-weight: 600;
+}
+.user-comment__list-item--date {
+  list-style: none;
+  color: #afafaf;
+}
+.user-comment__input {
+  display: flex;
+  width: 75vw;
 }/*# sourceMappingURL=bio.css.map */

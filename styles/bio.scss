@@ -210,7 +210,6 @@
 
 .avatar__image {
   @include layout;
-  margin-right: 0;
   background-image: url(../assets/images/Mohan-muruge.jpg);
   width: 2.25rem;
   height: 2.25rem;
@@ -219,6 +218,7 @@
   background-position: top left;
   margin-top: 1.5rem;
   margin-right: 0.75rem;
+  margin-left: 0;
 }
 
 .comment {
@@ -230,6 +230,12 @@
     @media screen and (min-width: 1280px) {
       margin-left: 7.688rem;
     }
+  }
+  &__container-all {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @include layout;
   }
   &__container {
     display: flex;
@@ -291,4 +297,44 @@ label {
   @include label-button;
   color: $silver;
   padding-bottom: 0.25rem;
+}
+
+.no-avatar__image {
+  margin-right: 0.75rem;
+  margin-left: 0;
+  margin-top: 1rem;
+  background-color: $mercury;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.user-comment {
+  &__container {
+    display: flex;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+  }
+  &__list {
+    @include padding-component;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__list-item {
+    list-style: none;
+    font-weight: 600;
+    &--date {
+      list-style: none;
+      color: $silver;
+    }
+  }
+
+  &__input {
+    display: flex;
+    width: 75vw;
+  }
 }
