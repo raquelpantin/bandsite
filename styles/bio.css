@@ -935,19 +935,26 @@ body {
   }
 }
 
-.comment__container {
+.avatar__image {
   margin: 0 1rem;
+  background-image: url(../assets/images/Mohan-muruge.jpg);
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: top left;
 }
 @media screen and (min-width: 768px) {
-  .comment__container {
+  .avatar__image {
     margin: 0 2.25rem;
   }
 }
 @media screen and (min-width: 1280x) {
-  .comment__container {
+  .avatar__image {
     margin: 0 auto;
   }
 }
+
 .comment__header {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -985,6 +992,30 @@ body {
     margin-left: 7.688rem;
   }
 }
+.comment__container {
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+@media screen and (min-width: 768px) {
+  .comment__container {
+    margin: 0 2.25rem;
+  }
+}
+@media screen and (min-width: 1280x) {
+  .comment__container {
+    margin: 0 auto;
+  }
+}
+.comment__container-name {
+  display: flex;
+  flex-direction: column;
+}
+.comment__container-text {
+  display: flex;
+  flex-direction: column;
+}
 .comment__name {
   font-size: 0.813rem;
   line-height: 1.125rem;
@@ -1009,8 +1040,6 @@ body {
   border: 1px solid #e1e1e1;
   color: #323232;
   background-color: #fafafa;
-  width: 80%;
-  height: 5rem;
 }
 @media screen and (min-width: 768px) {
   .comment__text {
