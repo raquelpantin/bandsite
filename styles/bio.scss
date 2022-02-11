@@ -332,9 +332,16 @@ label {
       color: $silver;
     }
   }
-
   &__input {
     display: flex;
     width: 75vw;
+  }
+}
+
+input,
+textarea {
+  &:focus {
+    outline: none;
+    border: 1px solid $bandsite-black;
   }
 }

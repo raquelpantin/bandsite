@@ -1213,4 +1213,10 @@ label {
 .user-comment__input {
   display: flex;
   width: 75vw;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid #323232;
 }/*# sourceMappingURL=bio.css.map */
