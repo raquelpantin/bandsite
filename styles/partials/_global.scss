@@ -195,10 +195,9 @@
   }
 }
 
-.divider {
+.divider-last {
   border-top: 1px solid $mercury;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  width: 100%;
   margin-bottom: 1rem;
   @media screen and (min-width: 768px) {
     margin: 0 2.25rem;
