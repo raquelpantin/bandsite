@@ -1066,6 +1066,9 @@ body {
     font-weight: 400;
   }
 }
+.comment__error {
+  border: 1px solid #d22d2d;
+}
 .comment__text {
   font-size: 0.813rem;
   line-height: 1.125rem;

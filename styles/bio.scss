@@ -292,6 +292,10 @@
     width: 75vw;
   }
 
+  &__error {
+    border: 1px solid #d22d2d;
+  }
+
   &__text {
     @include body-copy;
     font-family: "avenir";

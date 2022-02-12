@@ -59,3 +59,34 @@ function displayComment(arr) {
 }
 
 displayComment(userComments);
+
+const commentForm = document.querySelector(".comment__form");
+
+commentForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  let commentName = event.target.name.value;
+  let today = new Date();
+  let commentDate =
+    today.getMonth() + 1 + "/" + today.getDate() + "/" + today.getFullYear();
+  let commentUser = event.target.text.value;
+
+  if (commentName && commentDate && commentUser) {
+    commentSection.innerText = "";
+    userComments.unshift({
+      name: commentName,
+      date: commentDate,
+      comment: commentUser,
+    });
+    displayComment(userComments);
+    let clearName = document.querySelector(".comment__name");
+    clearName.value = " ";
+
+    let clearComment = document.querySelector(".comment__text");
+    clearComment.value = " ";
+  }
+  if (!commentName) {
+    let nameField = document.querySelector(".comment__name");
+    nameField.classList.add("comment__error");
+  }
+});
