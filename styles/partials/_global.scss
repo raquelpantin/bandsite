@@ -13,6 +13,7 @@
   @media screen and (min-width: 1280px) {
     padding-left: 5.438rem;
   }
+
   &__logo {
     height: 1.25rem;
     width: 7.5rem;
@@ -23,6 +24,7 @@
       margin-bottom: 1rem;
     }
   }
+
   &__list {
     display: flex;
     width: 100%;
@@ -32,6 +34,7 @@
       margin-top: 1rem;
     }
   }
+
   &__link {
     color: $mercury;
     text-decoration: none;
@@ -48,11 +51,13 @@
       margin-left: 3rem;
     }
   }
+
   &__link:active {
     color: $white;
     font-weight: 600;
     border-bottom: 0.25rem solid $white;
   }
+
   &__link:hover {
     color: $white;
     border-bottom: 0.25rem solid $white;
@@ -67,11 +72,13 @@
       padding-left: 5.438rem;
     }
   }
+
   &__tblt-dt {
     @media screen and (min-width: 768px) {
       display: flex;
     }
   }
+
   &__card {
     @include layout;
     display: flex;
@@ -106,10 +113,12 @@
       }
     }
   }
+
   &__header {
     @include section-header;
     @include padding-headline;
   }
+
   &__icons {
     display: inline-flex;
     width: 45%;
@@ -119,9 +128,11 @@
       margin-left: 2rem;
     }
   }
+
   &__icons--link {
     margin-right: 2rem;
   }
+
   &__contact {
     @include footer-copy;
     font-weight: 600;
@@ -131,11 +142,13 @@
       padding-top: 0;
     }
   }
+
   &__email {
     text-decoration: none;
     color: inherit;
     @include footer-copy;
   }
+
   &__email--last {
     text-decoration: none;
     color: inherit;
@@ -146,6 +159,7 @@
       padding-bottom: 1rem;
     }
   }
+
   &__contact--info-adr {
     @include footer-copy;
     @include padding-component;
@@ -154,17 +168,21 @@
       width: 12rem;
     }
   }
+
   &__contact--info {
     display: flex;
     flex-direction: column;
     @include padding-component;
   }
+
   &__contact--info-job {
     @include footer-copy;
   }
+
   &__contact--info-area {
     @include footer-copy;
   }
+
   &__logo {
     @include layout;
     height: 1.25rem;
@@ -188,32 +206,10 @@
       }
     }
   }
+
   &__copyright {
     @include footer-copy;
     @include layout;
     @include padding-component;
-  }
-}
-
-.divider-last {
-  border-top: 1px solid $mercury;
-  width: 100%;
-  margin-bottom: 1rem;
-  @media screen and (min-width: 768px) {
-    margin: 0 2.25rem;
-  }
-  @media screen and (min-width: 1280x) {
-    margin: 0 auto;
-  }
-}
-
-.divider-first {
-  border-top: 1px solid $mercury;
-  width: 100%;
-  @media screen and (min-width: 768px) {
-    margin: 0 2.25rem;
-  }
-  @media screen and (min-width: 1280x) {
-    margin: 0 auto;
   }
 }

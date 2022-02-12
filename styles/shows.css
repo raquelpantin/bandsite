@@ -498,37 +498,6 @@ body {
   }
 }
 
-.divider-last {
-  border-top: 1px solid #e1e1e1;
-  width: 100%;
-  margin-bottom: 1rem;
-}
-@media screen and (min-width: 768px) {
-  .divider-last {
-    margin: 0 2.25rem;
-  }
-}
-@media screen and (min-width: 1280x) {
-  .divider-last {
-    margin: 0 auto;
-  }
-}
-
-.divider-first {
-  border-top: 1px solid #e1e1e1;
-  width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .divider-first {
-    margin: 0 2.25rem;
-  }
-}
-@media screen and (min-width: 1280x) {
-  .divider-first {
-    margin: 0 auto;
-  }
-}
-
 .hero__image {
   background-image: url(../assets/images/hero-shows.jpg);
   width: 100vw;

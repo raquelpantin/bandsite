@@ -30,7 +30,7 @@ function displayComment(arr) {
     commentSection.appendChild(commentArticle);
 
     let imgDiv = document.createElement("div");
-    imgDiv.classList.add("no-avatar__image");
+    imgDiv.classList.add("user-comment__avatar");
     commentArticle.appendChild(imgDiv);
 
     let commentCard = document.createElement("div");
