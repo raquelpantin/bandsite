@@ -71,6 +71,8 @@ commentForm.addEventListener("submit", (event) => {
     today.getMonth() + 1 + "/" + today.getDate() + "/" + today.getFullYear();
   let commentUser = event.target.text.value;
 
+  let nameField = document.querySelector(".comment__name");
+
   if (commentName && commentDate && commentUser) {
     commentSection.innerText = "";
     userComments.unshift({
@@ -84,9 +86,10 @@ commentForm.addEventListener("submit", (event) => {
 
     let clearComment = document.querySelector(".comment__text");
     clearComment.value = " ";
+
+    nameField.classList.remove("comment__error");
   }
   if (!commentName) {
-    let nameField = document.querySelector(".comment__name");
     nameField.classList.add("comment__error");
   }
 });
