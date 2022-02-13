@@ -24,7 +24,7 @@
   &__text-box {
     position: relative;
     @media screen and (min-width: 768px) {
-      padding-top: 3rem;
+      padding-top: 1rem;
     }
     @media screen and (min-width: 1280px) {
       padding-top: 0;
@@ -36,11 +36,18 @@
     color: $white;
     @include layout;
     @include page-header;
+    @media screen and (min-width: 768px) {
+      width: 35rem;
+    }
     &--album {
       color: $white;
       @include layout;
       @include subheader;
       @include padding-headline;
+      @media screen and (min-width: 768px) {
+        padding-top: 1.5rem;
+        padding-bottom: 0.75rem;
+      }
     }
   }
   &__music {
@@ -48,6 +55,10 @@
     @include padding-component;
     width: 90%;
     height: 35vh;
+    @media screen and (min-width: 768px) {
+      width: 55vw;
+      height: 52vh;
+    }
   }
   &__overlay {
     width: 100vw;
