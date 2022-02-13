@@ -53,6 +53,29 @@ console.log(showListing);
 
 const showMain = document.querySelector(".shows__main");
 
+function displayTitles() {
+  let showTblt = document.createElement("ul");
+  showTblt.classList.add("shows__list-tblt");
+  showMain.appendChild(showTblt);
+
+  let date = document.createElement("li");
+  date.classList.add("shows__list-tblt--date");
+  date.innerText = "DATE";
+  showTblt.appendChild(date);
+
+  let venue = document.createElement("li");
+  venue.classList.add("shows__list-tblt--venue");
+  venue.innerText = "VENUE";
+  showTblt.appendChild(venue);
+
+  let location = document.createElement("li");
+  location.classList.add("shows__list-tblt--location");
+  location.innerText = "LOCATION";
+  showTblt.appendChild(location);
+}
+
+displayTitles();
+
 function displayShows(arr) {
   for (let i = 0; i < arr.length; i++) {
     let showSection = document.createElement("section");
@@ -61,7 +84,7 @@ function displayShows(arr) {
 
     let showList = document.createElement("ul");
     showList.classList.add("shows__list");
-    showMain.appendChild(showList);
+    showSection.appendChild(showList);
 
     let showListDate = document.createElement("li");
     showListDate.classList.add("shows__list-date");
@@ -96,7 +119,7 @@ function displayShows(arr) {
     let showButton = document.createElement("a");
     showButton.classList.add("shows__button");
     showButton.innerText = "BUY TICKETS";
-    showMain.appendChild(showButton);
+    showSection.appendChild(showButton);
 
     let showDivider = document.createElement("div");
     showDivider.classList.add("shows__divider");

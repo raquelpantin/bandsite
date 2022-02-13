@@ -69,52 +69,78 @@
     color: $bandsite-black;
     display: flex;
     flex-direction: column;
+    padding-bottom: 1rem;
   }
+
   &__header {
     @include layout;
     @include section-header;
     @include padding-headline;
   }
+
   &__individual {
     @include layout;
     display: flex;
     flex-direction: column;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    &:hover {
+      background-color: $alabaster;
+    }
   }
+
   &__list {
     list-style: none;
     display: flex;
     flex-direction: column;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
   }
+
   &__list-date {
     color: $silver;
     @include body-copy;
     font-weight: 600;
     padding-bottom: 0.5rem;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
   }
+
   &__list-date--info {
     font-weight: 600;
     padding-bottom: 1rem;
   }
+
   &__list-venue {
     color: $silver;
     @include body-copy;
     font-weight: 600;
     padding-bottom: 0.5rem;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
   }
+
   &__list-venue--info {
     padding-bottom: 1rem;
   }
+
   &__list-location {
     color: $silver;
     @include body-copy;
     font-weight: 600;
     padding-bottom: 0.5rem;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
   }
+
   &__list-location--info {
     padding-bottom: 1.5rem;
   }
+
   &__button {
     background: $bandsite-black;
     color: $white;
@@ -127,9 +153,30 @@
       background: $bandsite-darkblack;
     }
   }
+
   &__divider {
     border-top: 1px solid $mercury;
-    margin-top: 1rem;
     display: flex;
+  }
+
+  &__list-tblt {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+    }
+    &--date {
+      color: $silver;
+      font-weight: 600;
+    }
+    &--venue {
+      color: $silver;
+      font-weight: 600;
+    }
+    &--location {
+      color: $silver;
+      font-weight: 600;
+    }
   }
 }
