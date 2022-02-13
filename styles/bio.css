@@ -961,6 +961,8 @@ body {
   .avatar__image {
     width: 3rem;
     height: 3rem;
+    margin-top: 1.75rem;
+    margin-right: 0.75rem;
   }
 }
 
@@ -1015,6 +1017,11 @@ body {
 @media screen and (min-width: 1280x) {
   .comment__container-all {
     margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .comment__container-all {
+    align-items: center;
   }
 }
 .comment__container {
@@ -1075,6 +1082,13 @@ body {
     font-weight: 400;
   }
 }
+@media screen and (min-width: 768px) {
+  .comment__name {
+    width: 65vw;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+}
 .comment__error {
   border: 1px solid #d22d2d;
 }
@@ -1097,6 +1111,13 @@ body {
     font-size: 0.875rem;
     line-height: 1.375rem;
     font-weight: 400;
+  }
+}
+@media screen and (min-width: 768px) {
+  .comment__text {
+    width: 65vw;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -1182,6 +1203,12 @@ label {
   height: 2.25rem;
   border-radius: 50%;
   background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .user-comment__avatar {
+    width: 3rem;
+    height: 3rem;
+  }
 }
 .user-comment__list {
   padding-top: 1rem;
