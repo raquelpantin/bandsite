@@ -25,6 +25,10 @@ const commentSection = document.querySelector(".user-comment__all");
 
 function displayComment(arr) {
   for (let i = 0; i < arr.length; i++) {
+    let commentDivider = document.createElement("div");
+    commentDivider.classList.add("user-comment__divider");
+    commentSection.appendChild(commentDivider);
+
     let commentArticle = document.createElement("article");
     commentArticle.classList.add("user-comment__container");
     commentSection.appendChild(commentArticle);

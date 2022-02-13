@@ -254,6 +254,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
     @include layout;
     @media screen and (min-width: 768px) {
       align-items: center;
@@ -263,6 +264,12 @@
   &__container {
     display: flex;
     justify-content: center;
+    @media screen and (min-width: 768px) {
+      margin-right: 2.75rem;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-right: 5rem;
+    }
   }
 
   &__card {
@@ -289,7 +296,6 @@
       background-color: $bandsite-black;
       border-radius: 4px;
       margin-bottom: 0.75rem;
-      margin-right: 1rem;
       @media screen and (min-width: 768px) {
         width: 9rem;
         margin-right: 0;
@@ -314,6 +320,9 @@
       padding: 1rem;
       margin-bottom: 1rem;
     }
+    @media screen and (min-width: 1280px) {
+      width: 34vw;
+    }
   }
 
   &__error {
@@ -336,6 +345,9 @@
       padding: 1rem;
       margin-bottom: 1.5rem;
     }
+    @media screen and (min-width: 1280px) {
+      width: 34vw;
+    }
   }
 }
 
@@ -352,23 +364,29 @@ label {
 
 .user-comment {
   &__all {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     @media screen and (min-width: 768px) {
-      display: flex;
-      flex-direction: column;
+      width: 73vw;
     }
   }
+
+  &__divider {
+    border-top: 1px solid $mercury;
+    display: flex;
+    width: 90vw;
+    @media screen and (min-width: 768px) {
+      width: 72vw;
+    }
+  }
+
   &__container {
     display: flex;
-    border-top: 1px solid $mercury;
-    width: 100%;
     margin-bottom: 1rem;
     @media screen and (min-width: 768px) {
-      margin-left: 3rem;
       width: 73vw;
       @include body-copy;
-    }
-    @media screen and (min-width: 1280x) {
-      margin: 0 auto;
     }
   }
 
@@ -377,6 +395,9 @@ label {
     flex-direction: column;
     @media screen and (min-width: 768px) {
       width: 65vw;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 34vw;
     }
   }
 
@@ -421,6 +442,9 @@ label {
     width: 75vw;
     @media screen and (min-width: 768px) {
       width: 66vw;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 35vw;
     }
   }
 }

@@ -1007,6 +1007,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 100%;
   margin: 0 1rem;
 }
 @media screen and (min-width: 768px) {
@@ -1027,6 +1028,16 @@ body {
 .comment__container {
   display: flex;
   justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .comment__container {
+    margin-right: 2.75rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comment__container {
+    margin-right: 5rem;
+  }
 }
 .comment__card {
   display: flex;
@@ -1056,7 +1067,6 @@ body {
   background-color: #323232;
   border-radius: 4px;
   margin-bottom: 0.75rem;
-  margin-right: 1rem;
 }
 @media screen and (min-width: 768px) {
   .comment__card-btn {
@@ -1100,6 +1110,11 @@ body {
     margin-bottom: 1rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  .comment__name {
+    width: 34vw;
+  }
+}
 .comment__error {
   border: 1px solid #d22d2d;
 }
@@ -1129,6 +1144,11 @@ body {
     width: 65vw;
     padding: 1rem;
     margin-bottom: 1.5rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comment__text {
+    width: 34vw;
   }
 }
 
@@ -1185,21 +1205,32 @@ label {
   }
 }
 
+.user-comment__all {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 @media screen and (min-width: 768px) {
   .user-comment__all {
-    display: flex;
-    flex-direction: column;
+    width: 73vw;
+  }
+}
+.user-comment__divider {
+  border-top: 1px solid #e1e1e1;
+  display: flex;
+  width: 90vw;
+}
+@media screen and (min-width: 768px) {
+  .user-comment__divider {
+    width: 72vw;
   }
 }
 .user-comment__container {
   display: flex;
-  border-top: 1px solid #e1e1e1;
-  width: 100%;
   margin-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
   .user-comment__container {
-    margin-left: 3rem;
     width: 73vw;
     font-size: 0.813rem;
     line-height: 1.125rem;
@@ -1213,11 +1244,6 @@ label {
     font-weight: 400;
   }
 }
-@media screen and (min-width: 1280x) {
-  .user-comment__container {
-    margin: 0 auto;
-  }
-}
 .user-comment__card {
   display: flex;
   flex-direction: column;
@@ -1225,6 +1251,11 @@ label {
 @media screen and (min-width: 768px) {
   .user-comment__card {
     width: 65vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .user-comment__card {
+    width: 34vw;
   }
 }
 .user-comment__avatar {
@@ -1277,6 +1308,11 @@ label {
 @media screen and (min-width: 768px) {
   .user-comment__input {
     width: 66vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .user-comment__input {
+    width: 35vw;
   }
 }
 
