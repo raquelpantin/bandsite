@@ -1033,6 +1033,11 @@ body {
   flex-direction: column;
   padding-bottom: 0.5rem;
 }
+@media screen and (min-width: 768px) {
+  .comment__card {
+    align-items: flex-end;
+  }
+}
 .comment__card-name {
   display: flex;
   flex-direction: column;
@@ -1058,6 +1063,12 @@ body {
     font-size: 0.875rem;
     line-height: 1.375rem;
     font-weight: 400;
+  }
+}
+@media screen and (min-width: 768px) {
+  .comment__card-btn {
+    width: 9rem;
+    margin-right: 0;
   }
 }
 .comment__card-btn:hover {
