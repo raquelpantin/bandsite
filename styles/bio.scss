@@ -370,6 +370,9 @@ label {
     @media screen and (min-width: 768px) {
       width: 73vw;
     }
+    @media screen and (min-width: 1280px) {
+      margin-left: 31vw;
+    }
   }
 
   &__divider {
@@ -378,6 +381,9 @@ label {
     width: 90vw;
     @media screen and (min-width: 768px) {
       width: 72vw;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 38.5vw;
     }
   }
 
