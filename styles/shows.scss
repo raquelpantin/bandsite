@@ -65,9 +65,71 @@
 }
 
 .shows {
+  &__main {
+    color: $bandsite-black;
+    display: flex;
+    flex-direction: column;
+  }
   &__header {
     @include layout;
     @include section-header;
     @include padding-headline;
+  }
+  &__individual {
+    @include layout;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+  &__list-date {
+    color: $silver;
+    @include body-copy;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+  }
+  &__list-date--info {
+    font-weight: 600;
+    padding-bottom: 1rem;
+  }
+  &__list-venue {
+    color: $silver;
+    @include body-copy;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+  }
+  &__list-venue--info {
+    padding-bottom: 1rem;
+  }
+  &__list-location {
+    color: $silver;
+    @include body-copy;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+  }
+  &__list-location--info {
+    padding-bottom: 1.5rem;
+  }
+  &__button {
+    background: $bandsite-black;
+    color: $white;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.75rem 3rem 0.75rem 3rem;
+    text-align: center;
+    border-radius: 4px;
+    &:hover {
+      background: $bandsite-darkblack;
+    }
+  }
+  &__divider {
+    border-top: 1px solid $mercury;
+    margin-top: 1rem;
+    display: flex;
   }
 }
