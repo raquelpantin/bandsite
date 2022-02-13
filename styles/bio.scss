@@ -351,13 +351,21 @@ label {
 }
 
 .user-comment {
+  &__all {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
   &__container {
     display: flex;
     border-top: 1px solid $mercury;
     width: 100%;
     margin-bottom: 1rem;
     @media screen and (min-width: 768px) {
-      margin: 0 2.25rem;
+      margin-left: 3rem;
+      width: 73vw;
+      @include body-copy;
     }
     @media screen and (min-width: 1280x) {
       margin: 0 auto;
@@ -367,6 +375,9 @@ label {
   &__card {
     display: flex;
     flex-direction: column;
+    @media screen and (min-width: 768px) {
+      width: 65vw;
+    }
   }
 
   &__avatar {
@@ -389,11 +400,16 @@ label {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @media screen and (min-width: 768px) {
+      padding-top: 1.25rem;
+      padding-bottom: 0.5rem;
+    }
   }
 
   &__list-item {
     list-style: none;
     font-weight: 600;
+
     &--date {
       list-style: none;
       color: $silver;
@@ -403,6 +419,9 @@ label {
   &__input {
     display: flex;
     width: 75vw;
+    @media screen and (min-width: 768px) {
+      width: 66vw;
+    }
   }
 }
 

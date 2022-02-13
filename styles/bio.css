@@ -1185,6 +1185,12 @@ label {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .user-comment__all {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .user-comment__container {
   display: flex;
   border-top: 1px solid #e1e1e1;
@@ -1193,7 +1199,18 @@ label {
 }
 @media screen and (min-width: 768px) {
   .user-comment__container {
-    margin: 0 2.25rem;
+    margin-left: 3rem;
+    width: 73vw;
+    font-size: 0.813rem;
+    line-height: 1.125rem;
+    font-weight: 400;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 768px) {
+  .user-comment__container {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: 400;
   }
 }
 @media screen and (min-width: 1280x) {
@@ -1204,6 +1221,11 @@ label {
 .user-comment__card {
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .user-comment__card {
+    width: 65vw;
+  }
 }
 .user-comment__avatar {
   margin-right: 0.75rem;
@@ -1234,6 +1256,12 @@ label {
     padding-bottom: 2.25rem;
   }
 }
+@media screen and (min-width: 768px) {
+  .user-comment__list {
+    padding-top: 1.25rem;
+    padding-bottom: 0.5rem;
+  }
+}
 .user-comment__list-item {
   list-style: none;
   font-weight: 600;
@@ -1245,6 +1273,11 @@ label {
 .user-comment__input {
   display: flex;
   width: 75vw;
+}
+@media screen and (min-width: 768px) {
+  .user-comment__input {
+    width: 66vw;
+  }
 }
 
 input:focus,
