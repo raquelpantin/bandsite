@@ -130,12 +130,10 @@ function displayShows(arr) {
 
 displayShows(showListing);
 
-const tableRow = document.querySelector(".shows__individual");
+const tableRow = document.querySelectorAll(".shows__individual");
 
-tableRow.addEventListener("click", (event) => {
-  event.preventDefault();
-
-  tableRow.classList.add("shows__individual-active");
-
-  console.log("active: background change to mercury");
-});
+for (let i = 0; i < tableRow.length; i++) {
+  tableRow[i].addEventListener("click", function () {
+    tableRow[i].classList.add("shows__individual-active");
+  });
+}

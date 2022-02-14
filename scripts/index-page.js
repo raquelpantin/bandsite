@@ -72,7 +72,11 @@ commentForm.addEventListener("submit", (event) => {
   let commentName = event.target.name.value;
   let today = new Date();
   let commentDate =
-    today.getMonth() + 1 + "/" + today.getDate() + "/" + today.getFullYear();
+    ("0" + (today.getMonth() + 1)).slice(-2) +
+    "/" +
+    today.getDate() +
+    "/" +
+    today.getFullYear();
   let commentUser = event.target.text.value;
 
   let nameField = document.querySelector(".comment__name");
