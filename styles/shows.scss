@@ -56,15 +56,15 @@
     width: 90%;
     height: 35vh;
     @media screen and (min-width: 768px) {
-      width: 55vw;
-      height: 52vh;
+      width: 25rem;
+      height: 12rem;
     }
     @media screen and (min-width: 1280px) {
       position: relative;
       left: 40rem;
       bottom: 9rem;
-      width: 30vw;
-      height: 45vh;
+      width: 25rem;
+      height: 12rem;
     }
   }
   &__overlay {
@@ -130,7 +130,7 @@
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      width: 60vw;
+      width: 30rem;
     }
     @media screen and (min-width: 1280px) {
       width: 60%;
@@ -216,7 +216,7 @@
       margin-right: 1rem;
     }
     @media screen and (min-width: 1280px) {
-      width: 67%;
+      width: 55rem;
       margin-left: 23rem;
     }
   }
@@ -229,7 +229,7 @@
       list-style: none;
       @include layout;
       @include label-button;
-      width: 75vw;
+      width: 25rem;
     }
     @media screen and (min-width: 1280px) {
       width: 60vw;

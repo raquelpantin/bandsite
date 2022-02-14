@@ -625,8 +625,8 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero__music {
-    width: 55vw;
-    height: 52vh;
+    width: 25rem;
+    height: 12rem;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -634,8 +634,8 @@ body {
     position: relative;
     left: 40rem;
     bottom: 9rem;
-    width: 30vw;
-    height: 45vh;
+    width: 25rem;
+    height: 12rem;
   }
 }
 .hero__overlay {
@@ -746,7 +746,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 60vw;
+    width: 30rem;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -870,7 +870,7 @@ body {
 }
 @media screen and (min-width: 1280px) {
   .shows__divider {
-    width: 67%;
+    width: 55rem;
     margin-left: 23rem;
   }
 }
@@ -886,7 +886,7 @@ body {
     font-size: 0.625rem;
     line-height: 1.25rem;
     font-weight: 700;
-    width: 75vw;
+    width: 25rem;
   }
 }
 @media screen and (min-width: 768px) and (min-width: 768px) {
