@@ -653,6 +653,11 @@ body {
   flex-direction: column;
   padding-bottom: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .shows__main {
+    padding-bottom: 1.5rem;
+  }
+}
 .shows__header {
   margin: 0 1rem;
   font-size: 1.5rem;
@@ -701,6 +706,12 @@ body {
     margin: 0 auto;
   }
 }
+@media screen and (min-width: 768px) {
+  .shows__individual {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 .shows__individual:hover {
   background-color: #fafafa;
 }
@@ -712,6 +723,9 @@ body {
 @media screen and (min-width: 768px) {
   .shows__list {
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 60vw;
   }
 }
 .shows__list-date {
@@ -738,6 +752,12 @@ body {
   font-weight: 600;
   padding-bottom: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .shows__list-date--info {
+    padding-bottom: 0;
+    width: 9rem;
+  }
+}
 .shows__list-venue {
   color: #afafaf;
   font-size: 0.813rem;
@@ -760,6 +780,12 @@ body {
 }
 .shows__list-venue--info {
   padding-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .shows__list-venue--info {
+    padding-bottom: 0;
+    width: 8rem;
+  }
 }
 .shows__list-location {
   color: #afafaf;
@@ -784,6 +810,11 @@ body {
 .shows__list-location--info {
   padding-bottom: 1.5rem;
 }
+@media screen and (min-width: 768px) {
+  .shows__list-location--info {
+    padding-bottom: 0;
+  }
+}
 .shows__button {
   background: #323232;
   color: #ffffff;
@@ -793,12 +824,23 @@ body {
   text-align: center;
   border-radius: 4px;
 }
+@media screen and (min-width: 768px) {
+  .shows__button {
+    padding: 0.75rem 2rem 0.75rem 2rem;
+  }
+}
 .shows__button:hover {
   background: #000000;
 }
 .shows__divider {
   border-top: 1px solid #e1e1e1;
   display: flex;
+}
+@media screen and (min-width: 768px) {
+  .shows__divider {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 .shows__list-tblt {
   display: none;
@@ -808,6 +850,29 @@ body {
     display: flex;
     flex-direction: row;
     list-style: none;
+    margin: 0 1rem;
+    font-size: 0.625rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    width: 30rem;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 768px) {
+  .shows__list-tblt {
+    margin: 0 2.25rem;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1280x) {
+  .shows__list-tblt {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 768px) {
+  .shows__list-tblt {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    font-weight: 700;
   }
 }
 .shows__list-tblt--date {
