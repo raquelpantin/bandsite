@@ -97,6 +97,9 @@
     @include layout;
     @include section-header;
     @include padding-headline;
+    @media screen and (min-width: 1280px) {
+      margin-left: 7.5rem;
+    }
   }
 
   &__individual {
@@ -108,6 +111,11 @@
     @media screen and (min-width: 768px) {
       flex-direction: row;
       justify-content: space-between;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 60rem;
+      justify-content: space-evenly;
+      margin-left: 20rem;
     }
     &:hover {
       background-color: $alabaster;
@@ -123,6 +131,9 @@
       align-items: center;
       justify-content: space-between;
       width: 60vw;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 60%;
     }
   }
 
@@ -204,6 +215,10 @@
       margin-left: 1rem;
       margin-right: 1rem;
     }
+    @media screen and (min-width: 1280px) {
+      width: 67%;
+      margin-left: 23rem;
+    }
   }
 
   &__list-tblt {
@@ -216,15 +231,25 @@
       @include label-button;
       width: 75vw;
     }
+    @media screen and (min-width: 1280px) {
+      width: 60vw;
+      margin-left: 24.5rem;
+    }
     &--date {
       color: $silver;
       font-weight: 600;
       margin-right: 18.5vw;
+      @media screen and (min-width: 1280px) {
+        margin-right: 12.5rem;
+      }
     }
     &--venue {
       color: $silver;
       font-weight: 600;
       margin-right: 15.25vw;
+      @media screen and (min-width: 1280px) {
+        margin-right: 11rem;
+      }
     }
     &--location {
       color: $silver;
