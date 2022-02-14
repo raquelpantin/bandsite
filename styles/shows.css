@@ -629,6 +629,15 @@ body {
     height: 52vh;
   }
 }
+@media screen and (min-width: 1280px) {
+  .hero__music {
+    position: relative;
+    left: 40rem;
+    bottom: 9rem;
+    width: 30vw;
+    height: 45vh;
+  }
+}
 .hero__overlay {
   width: 100vw;
   height: 70vh;
@@ -854,8 +863,7 @@ body {
     font-size: 0.625rem;
     line-height: 1.25rem;
     font-weight: 700;
-    width: 30rem;
-    justify-content: space-between;
+    width: 75vw;
   }
 }
 @media screen and (min-width: 768px) and (min-width: 768px) {
@@ -878,10 +886,12 @@ body {
 .shows__list-tblt--date {
   color: #afafaf;
   font-weight: 600;
+  margin-right: 18.5vw;
 }
 .shows__list-tblt--venue {
   color: #afafaf;
   font-weight: 600;
+  margin-right: 15.25vw;
 }
 .shows__list-tblt--location {
   color: #afafaf;

@@ -59,6 +59,13 @@
       width: 55vw;
       height: 52vh;
     }
+    @media screen and (min-width: 1280px) {
+      position: relative;
+      left: 40rem;
+      bottom: 9rem;
+      width: 30vw;
+      height: 45vh;
+    }
   }
   &__overlay {
     width: 100vw;
@@ -207,16 +214,17 @@
       list-style: none;
       @include layout;
       @include label-button;
-      width: 30rem;
-      justify-content: space-between;
+      width: 75vw;
     }
     &--date {
       color: $silver;
       font-weight: 600;
+      margin-right: 18.5vw;
     }
     &--venue {
       color: $silver;
       font-weight: 600;
+      margin-right: 15.25vw;
     }
     &--location {
       color: $silver;
