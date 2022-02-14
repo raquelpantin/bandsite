@@ -119,6 +119,7 @@ function displayShows(arr) {
     let showButton = document.createElement("a");
     showButton.classList.add("shows__button");
     showButton.innerText = "BUY TICKETS";
+    showButton.setAttribute("href", "./shows.html");
     showSection.appendChild(showButton);
 
     let showDivider = document.createElement("div");
@@ -128,3 +129,13 @@ function displayShows(arr) {
 }
 
 displayShows(showListing);
+
+const tableRow = document.querySelector(".shows__individual");
+
+tableRow.addEventListener("click", (event) => {
+  event.preventDefault();
+
+  tableRow.classList.add("shows__individual-active");
+
+  console.log("active: background change to mercury");
+});
