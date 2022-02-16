@@ -97,7 +97,7 @@ commentForm.addEventListener("submit", (event) => {
 
     nameField.classList.remove("comment__error");
   }
-  if (!commentName) {
+  if (!commentName || !commentUser) {
     nameField.classList.add("comment__error");
   }
 });

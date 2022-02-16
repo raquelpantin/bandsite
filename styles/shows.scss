@@ -120,9 +120,12 @@
     &:hover {
       background-color: $alabaster;
     }
-    &-active {
+    &:active {
       background-color: $mercury;
     }
+    // &-active {
+    //   background-color: $mercury;
+    // }
   }
 
   &__list {
