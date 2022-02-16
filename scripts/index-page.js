@@ -80,6 +80,7 @@ commentForm.addEventListener("submit", (event) => {
   let commentUser = event.target.text.value;
 
   let nameField = document.querySelector(".comment__name");
+  let commentField = document.querySelector(".comment__text");
 
   if (commentName && commentDate && commentUser) {
     commentSection.innerText = "";
@@ -97,7 +98,11 @@ commentForm.addEventListener("submit", (event) => {
 
     nameField.classList.remove("comment__error");
   }
-  if (!commentName || !commentUser) {
+  if (!commentName) {
     nameField.classList.add("comment__error");
+  }
+  if (!commentUser) {
+    commentField.classList.add("comment__error");
+    console.log("no comment from user");
   }
 });

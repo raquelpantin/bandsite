@@ -1,6 +1,6 @@
-@use "./font" as *;
-@use "./colors" as *;
-@use "./layout" as *;
+@use "./partials/font" as *;
+@use "./partials/colors" as *;
+@use "./partials/layout" as *;
 
 .nav-bar {
   background-color: $bandsite-black;

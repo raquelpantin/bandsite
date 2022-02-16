@@ -325,10 +325,6 @@
     }
   }
 
-  &__error {
-    border: 1px solid #d22d2d;
-  }
-
   &__text {
     @include body-copy;
     font-family: "avenir";
@@ -348,6 +344,10 @@
     @media screen and (min-width: 1280px) {
       width: 34vw;
     }
+  }
+
+  &__error {
+    border: 1px solid #d22d2d;
   }
 }
 
