@@ -135,6 +135,6 @@ const tableRow = document.querySelectorAll(".shows__individual");
 for (let i = 0; i < tableRow.length; i++) {
   tableRow[i].addEventListener("click", function (e) {
     e.preventDefault();
-    tableRow[i].classList.add("shows__individual-active");
+    tableRow[i].classList.toggle("shows__individual-active");
   });
 }
