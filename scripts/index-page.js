@@ -1,68 +1,54 @@
-const userComments = [
-  {
-    name: "Connor Walton",
-    date: "02/17/2021",
-    comment:
-      "This is art. This is inexplicable magic expressed in the purest way, everything that makes up this majestic work deserves reverence. Let us appreciate this for what it is and what it contains.",
-  },
-  {
-    name: "Emilie Beach",
-    date: "01/09/2021",
-    comment:
-      "I feel blessed to have seen them in person. What a show! They were just perfection. If there was one day of my life I could relive, this would be it. What an incredible day.",
-  },
-  {
-    name: "Miles Acosta",
-    date: "12/20/2021",
-    comment:
-      "I can't stop listening. Every time I hear one of their songs - the vocals - it gives me goosebumps. Shivers straight down my spine. What a beautiful expression of creativity. Can't get enough.",
-  },
-];
+const apiKey = "1e2adea7-0680-4c90-a680-774c62dfd9ca";
 
-console.log(userComments);
+const commentURL =
+  "https://project-1-api.herokuapp.com/comments?api_key=1e2adea7-0680-4c90-a680-774c62dfd9ca";
+
+axios.get(commentURL).then((response) => {
+  console.log(response.data);
+  let userArray = response.data;
+  userArray.forEach((com) => {
+    displayComment(com);
+  });
+});
 
 const commentSection = document.querySelector(".user-comment__all");
 
-function displayComment(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    let commentDivider = document.createElement("div");
-    commentDivider.classList.add("user-comment__divider");
-    commentSection.appendChild(commentDivider);
+function displayComment(com) {
+  let commentDivider = document.createElement("div");
+  commentDivider.classList.add("user-comment__divider");
+  commentSection.appendChild(commentDivider);
 
-    let commentArticle = document.createElement("article");
-    commentArticle.classList.add("user-comment__container");
-    commentSection.appendChild(commentArticle);
+  let commentArticle = document.createElement("article");
+  commentArticle.classList.add("user-comment__container");
+  commentSection.appendChild(commentArticle);
 
-    let imgDiv = document.createElement("div");
-    imgDiv.classList.add("user-comment__avatar");
-    commentArticle.appendChild(imgDiv);
+  let imgDiv = document.createElement("div");
+  imgDiv.classList.add("user-comment__avatar");
+  commentArticle.appendChild(imgDiv);
 
-    let commentCard = document.createElement("div");
-    commentCard.classList.add("user-comment__card");
-    commentArticle.appendChild(commentCard);
+  let commentCard = document.createElement("div");
+  commentCard.classList.add("user-comment__card");
+  commentArticle.appendChild(commentCard);
 
-    let commentList = document.createElement("ul");
-    commentList.classList.add("user-comment__list");
-    commentCard.appendChild(commentList);
+  let commentList = document.createElement("ul");
+  commentList.classList.add("user-comment__list");
+  commentCard.appendChild(commentList);
 
-    let commentListItem = document.createElement("li");
-    commentListItem.classList.add("user-comment__list-item");
-    commentListItem.innerHTML = arr[i].name;
-    commentList.appendChild(commentListItem);
+  let commentListItem = document.createElement("li");
+  commentListItem.classList.add("user-comment__list-item");
+  commentListItem.innerHTML = com.name;
+  commentList.appendChild(commentListItem);
 
-    let commentListDate = document.createElement("li");
-    commentListDate.classList.add("user-comment__list-item--date");
-    commentListDate.innerHTML = arr[i].date;
-    commentList.appendChild(commentListDate);
+  let commentListDate = document.createElement("li");
+  commentListDate.classList.add("user-comment__list-item--date");
+  commentListDate.innerHTML = com.timestamp;
+  commentList.appendChild(commentListDate);
 
-    let comment = document.createElement("p");
-    comment.classList.add("user-comment__input");
-    comment.innerHTML = arr[i].comment;
-    commentCard.appendChild(comment);
-  }
+  let comment = document.createElement("p");
+  comment.classList.add("user-comment__input");
+  comment.innerHTML = com.comment;
+  commentCard.appendChild(comment);
 }
-
-displayComment(userComments);
 
 const commentForm = document.querySelector(".comment__form");
 
