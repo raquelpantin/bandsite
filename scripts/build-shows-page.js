@@ -62,6 +62,15 @@ axios.get(commentURL).then((response) => {
   showArray.forEach((shows) => {
     displayShows(shows);
   });
+  const tableRow = document.querySelectorAll(".shows__individual");
+
+  for (let i = 0; i < tableRow.length; i++) {
+    tableRow[i].addEventListener("dblclick", function (e) {
+      e.preventDefault();
+      tableRow[i].classList.toggle("shows__individual-active");
+      console.log("clicked");
+    });
+  }
 });
 
 const showMain = document.querySelector(".shows__main");
@@ -137,14 +146,4 @@ function displayShows(shows) {
   let showDivider = document.createElement("div");
   showDivider.classList.add("shows__divider");
   showMain.appendChild(showDivider);
-}
-
-const tableRow = document.querySelectorAll(".shows__individual");
-
-for (let i = 0; i < tableRow.length; i++) {
-  tableRow[i].addEventListener("dblclick", function (e) {
-    e.preventDefault();
-    tableRow[i].classList.toggle("shows__individual-active");
-    console.log("clicked");
-  });
 }
