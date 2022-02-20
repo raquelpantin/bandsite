@@ -47,7 +47,13 @@ function displayComment(com) {
 
   let commentListDate = document.createElement("li");
   commentListDate.classList.add("user-comment__list-item--date");
-  commentListDate.innerHTML = new Date(com.timestamp);
+  let newDate = new Date(com.timestamp);
+  commentListDate.innerHTML =
+    ("0" + (new Date(com.timestamp).getMonth() + 1)).slice(-2) +
+    "/" +
+    new Date(com.timestamp).getDate() +
+    "/" +
+    new Date(com.timestamp).getFullYear();
   commentList.appendChild(commentListDate);
 
   let comment = document.createElement("p");
@@ -62,6 +68,7 @@ axios
     let commentArray = response.data.sort((a, b) => {
       return b.timestamp - a.timestamp;
     });
+    console.log(commentArray);
     commentArray.forEach((comment) => {
       displayComment(comment);
     });
@@ -95,7 +102,9 @@ commentForm.addEventListener("submit", (event) => {
           .get(commentURL)
           .then((response) => {
             console.log(response.data);
-            let commentArray = response.data;
+            let commentArray = response.data.sort((a, b) => {
+              return b.timestamp - a.timestamp;
+            });
             commentArray.forEach((comment) => {
               displayComment(comment);
               nameField.value = "";
