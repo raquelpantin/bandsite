@@ -20,6 +20,7 @@
       height: 45vw;
     }
   }
+
   &__text-box {
     position: relative;
     @media screen and (min-width: 768px) {
@@ -30,6 +31,7 @@
       margin: auto 5.438rem;
     }
   }
+
   &__text {
     width: 15rem;
     color: $white;
@@ -38,6 +40,7 @@
     @media screen and (min-width: 768px) {
       width: 35rem;
     }
+
     &--album {
       color: $white;
       @include layout;
@@ -49,6 +52,7 @@
       }
     }
   }
+
   &__music {
     @include layout;
     @include padding-component;
@@ -66,6 +70,7 @@
       height: 12rem;
     }
   }
+
   &__overlay {
     width: 100vw;
     height: 70vh;
@@ -237,6 +242,7 @@
       width: 60vw;
       margin-left: 24.5rem;
     }
+
     &--date {
       color: $silver;
       font-weight: 600;
@@ -245,6 +251,7 @@
         margin-right: 12.5rem;
       }
     }
+
     &--venue {
       color: $silver;
       font-weight: 600;
@@ -253,6 +260,7 @@
         margin-right: 11rem;
       }
     }
+
     &--location {
       color: $silver;
       font-weight: 600;
