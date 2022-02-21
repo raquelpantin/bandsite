@@ -15,7 +15,6 @@ axios.get(commentURL).then((response) => {
     tableRow[i].addEventListener("dblclick", function (e) {
       e.preventDefault();
       tableRow[i].classList.toggle("shows__individual-active");
-      console.log("clicked");
     });
   }
 });
