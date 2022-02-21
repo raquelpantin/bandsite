@@ -1,3 +1,15 @@
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1280px) {
+    @content;
+  }
+}
+
 @mixin padding-headline {
   padding-top: 1.5rem;
   padding-bottom: 1rem;
@@ -96,17 +108,5 @@
     font-size: 0.75rem;
     line-height: 1.25rem;
     font-weight: 700;
-  }
-}
-
-@mixin tablet {
-  @media screen and (min-width: 768px) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media screen and (min-width: 1280px) {
-    @content;
   }
 }

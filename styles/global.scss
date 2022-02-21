@@ -1,16 +1,17 @@
-@use "./font" as *;
-@use "./colors" as *;
-@use "./mixins" as *;
-@use "./reset" as *;
+@use "./partials/font" as *;
+@use "./partials/colors" as *;
+@use "./partials/mixins" as *;
 
 .nav-bar {
   background-color: $bandsite-black;
   display: flex;
   flex-direction: column;
   align-items: center;
+
   @include tablet {
     flex-direction: row;
   }
+
   @include desktop {
     padding-left: 5.438rem;
   }
@@ -20,6 +21,7 @@
     width: 7.5rem;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
+
     @include tablet {
       margin-left: 2.25rem;
       margin-bottom: 1rem;
@@ -30,6 +32,7 @@
     display: flex;
     width: 100%;
     justify-content: space-around;
+
     @include tablet {
       width: auto;
       margin-top: 1rem;
@@ -46,6 +49,7 @@
     padding-bottom: 0.5rem;
     width: 100%;
     text-align: center;
+
     @include tablet {
       font-size: 0.65rem;
       padding-bottom: 1rem;
@@ -69,6 +73,7 @@
   &__container {
     background-color: $bandsite-black;
     color: $white;
+
     @include desktop {
       padding-left: 5.438rem;
     }
@@ -84,18 +89,22 @@
     @include layout;
     display: flex;
     flex-direction: column;
+
     @include tablet {
       flex-direction: row;
       position: relative;
     }
+
     &--cam {
       @include layout;
+
       @include tablet {
         display: flex;
         flex-direction: column;
         margin-right: 3rem;
       }
     }
+
     &--pearl {
       @include layout;
       @include tablet {
@@ -105,6 +114,7 @@
         margin-right: 3rem;
       }
     }
+
     &--carson {
       @include layout;
       @include tablet {
@@ -123,6 +133,7 @@
   &__icons {
     display: inline-flex;
     width: 45%;
+
     @include tablet {
       height: 100%;
       margin-top: 4rem;
@@ -138,6 +149,7 @@
     @include footer-copy;
     font-weight: 600;
     padding-top: 1rem;
+
     @include tablet {
       font-weight: 600;
       padding-top: 0;
@@ -147,15 +159,18 @@
   &__email {
     text-decoration: none;
     color: inherit;
+
     @include footer-copy;
   }
 
   &__email--last {
     text-decoration: none;
     color: inherit;
+
     @include footer-copy;
     padding-bottom: 4rem;
     display: flex;
+
     @include tablet {
       padding-bottom: 1rem;
     }
@@ -163,8 +178,10 @@
 
   &__contact--info-adr {
     @include footer-copy;
+
     @include padding-component;
     width: 10rem;
+
     @include tablet {
       width: 12rem;
     }
@@ -173,6 +190,7 @@
   &__contact--info {
     display: flex;
     flex-direction: column;
+
     @include padding-component;
   }
 
@@ -188,11 +206,14 @@
     @include layout;
     height: 1.25rem;
     width: 7.5rem;
+
     @include tablet {
       display: none;
     }
+
     &--tblt-dt {
       display: none;
+
       @include tablet {
         display: flex;
         text-decoration: none;
@@ -202,6 +223,7 @@
         top: 4rem;
         right: 0rem;
       }
+
       @include desktop {
         right: 6rem;
       }
@@ -212,5 +234,118 @@
     @include footer-copy;
     @include layout;
     @include padding-component;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin padding-headline {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  @include tablet {
+    padding-top: 3rem;
+    padding-bottom: 2.25rem;
+  }
+}
+
+@mixin padding-component {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  @include tablet {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+  }
+}
+
+@mixin padding-images {
+  padding-bottom: 1rem;
+  @include tablet {
+    padding-bottom: 2.25rem;
+  }
+}
+
+@mixin layout {
+  margin: 0 1rem;
+  @include tablet {
+    margin: 0 2.25rem;
+  }
+  @include desktop {
+    margin: 0 auto;
+  }
+}
+
+@mixin page-header {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  @include tablet {
+    font-size: 3.75rem;
+    line-height: 4.25rem;
+    font-weight: 600;
+  }
+}
+
+@mixin section-header {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  @include tablet {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    font-weight: 600;
+  }
+}
+
+@mixin subheader {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-weight: 500;
+  @include tablet {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 500;
+  }
+}
+
+@mixin body-copy {
+  font-size: 0.813rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  @include tablet {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+  }
+}
+
+@mixin footer-copy {
+  font-size: 0.813rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  @include tablet {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+  }
+}
+
+@mixin label-button {
+  font-size: 0.625rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  @include tablet {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    font-weight: 700;
   }
 }
