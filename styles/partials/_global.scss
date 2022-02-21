@@ -1,16 +1,17 @@
-@use "./partials/font" as *;
-@use "./partials/colors" as *;
-@use "./partials/mixins" as *;
+@use "./font" as *;
+@use "./colors" as *;
+@use "./mixins" as *;
+@use "./reset" as *;
 
 .nav-bar {
   background-color: $bandsite-black;
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     flex-direction: row;
   }
-  @media screen and (min-width: 1280px) {
+  @include desktop {
     padding-left: 5.438rem;
   }
 
@@ -19,7 +20,7 @@
     width: 7.5rem;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
-    @media screen and (min-width: 768px) {
+    @include tablet {
       margin-left: 2.25rem;
       margin-bottom: 1rem;
     }
@@ -29,7 +30,7 @@
     display: flex;
     width: 100%;
     justify-content: space-around;
-    @media screen and (min-width: 768px) {
+    @include tablet {
       width: auto;
       margin-top: 1rem;
     }
@@ -45,7 +46,7 @@
     padding-bottom: 0.5rem;
     width: 100%;
     text-align: center;
-    @media screen and (min-width: 768px) {
+    @include tablet {
       font-size: 0.65rem;
       padding-bottom: 1rem;
       margin-left: 3rem;
@@ -68,13 +69,13 @@
   &__container {
     background-color: $bandsite-black;
     color: $white;
-    @media screen and (min-width: 1280px) {
+    @include desktop {
       padding-left: 5.438rem;
     }
   }
 
   &__tblt-dt {
-    @media screen and (min-width: 768px) {
+    @include tablet {
       display: flex;
     }
   }
@@ -83,13 +84,13 @@
     @include layout;
     display: flex;
     flex-direction: column;
-    @media screen and (min-width: 768px) {
+    @include tablet {
       flex-direction: row;
       position: relative;
     }
     &--cam {
       @include layout;
-      @media screen and (min-width: 768px) {
+      @include tablet {
         display: flex;
         flex-direction: column;
         margin-right: 3rem;
@@ -97,7 +98,7 @@
     }
     &--pearl {
       @include layout;
-      @media screen and (min-width: 768px) {
+      @include tablet {
         display: flex;
         flex-direction: column;
         margin-left: 0;
@@ -106,7 +107,7 @@
     }
     &--carson {
       @include layout;
-      @media screen and (min-width: 768px) {
+      @include tablet {
         display: flex;
         flex-direction: column;
         margin-left: 0;
@@ -122,7 +123,7 @@
   &__icons {
     display: inline-flex;
     width: 45%;
-    @media screen and (min-width: 768px) {
+    @include tablet {
       height: 100%;
       margin-top: 4rem;
       margin-left: 2rem;
@@ -137,7 +138,7 @@
     @include footer-copy;
     font-weight: 600;
     padding-top: 1rem;
-    @media screen and (min-width: 768px) {
+    @include tablet {
       font-weight: 600;
       padding-top: 0;
     }
@@ -155,7 +156,7 @@
     @include footer-copy;
     padding-bottom: 4rem;
     display: flex;
-    @media screen and (min-width: 768px) {
+    @include tablet {
       padding-bottom: 1rem;
     }
   }
@@ -164,7 +165,7 @@
     @include footer-copy;
     @include padding-component;
     width: 10rem;
-    @media screen and (min-width: 768px) {
+    @include tablet {
       width: 12rem;
     }
   }
@@ -187,12 +188,12 @@
     @include layout;
     height: 1.25rem;
     width: 7.5rem;
-    @media screen and (min-width: 768px) {
+    @include tablet {
       display: none;
     }
     &--tblt-dt {
       display: none;
-      @media screen and (min-width: 768px) {
+      @include tablet {
         display: flex;
         text-decoration: none;
         font-size: 1.25rem;
@@ -201,7 +202,7 @@
         top: 4rem;
         right: 0rem;
       }
-      @media screen and (min-width: 1280px) {
+      @include desktop {
         right: 6rem;
       }
     }

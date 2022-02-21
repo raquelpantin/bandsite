@@ -1,8 +1,8 @@
+@use "./partials/colors" as *;
+@use "./partials/font" as *;
+@use "./partials/mixins" as *;
 @use "./partials/reset" as *;
 @use "./partials/global" as *;
-@use "./partials/font" as *;
-@use "./partials/colors" as *;
-@use "./partials/mixins" as *;
 
 .hero {
   &__image {
@@ -15,20 +15,20 @@
     flex-direction: row;
     align-items: center;
     position: relative;
-    @media screen and (min-width: 768px) {
+    @include tablet {
       height: 55vw;
     }
-    @media screen and (min-width: 1280px) {
+    @include desktop {
       height: 45vw;
     }
   }
 
   &__text-box {
     position: relative;
-    @media screen and (min-width: 768px) {
+    @include tablet {
       padding-top: 3rem;
     }
-    @media screen and (min-width: 1280px) {
+    @include desktop {
       padding-top: 0;
       margin: auto 5.438rem;
     }
@@ -46,10 +46,10 @@
     background: $bandsite-black;
     opacity: 0.5;
     position: absolute;
-    @media screen and (min-width: 768px) {
+    @include tablet {
       height: 55vw;
     }
-    @media screen and (min-width: 1280px) {
+    @include desktop {
       height: 45vw;
     }
   }
@@ -61,7 +61,7 @@
     @include layout;
     @include padding-headline;
     color: $bandsite-black;
-    @media screen and (min-width: 1280px) {
+    @include desktop {
       margin-left: 7.688rem;
     }
   }
@@ -76,11 +76,11 @@
   &__image {
     width: 100%;
     height: 50vw;
-    @media screen and (min-width: 768px) {
+    @include tablet {
       padding: 0rem 3.5rem;
       height: 40vw;
     }
-    @media screen and (min-width: 1280px) {
+    @include desktop {
       padding: 0rem 10.875rem;
     }
   }
@@ -89,13 +89,13 @@
     @include subheader;
     @include padding-component;
     font-weight: 600;
-    @media screen and (min-width: 768px) {
+    @include tablet {
       padding-left: 3.5rem;
       padding-right: 2rem;
       font-weight: 600;
       padding-bottom: 0.5rem;
     }
-    @media screen and (min-width: 1280px) {
+    @include desktop {
       padding-left: 10.875rem;
       width: 76%;
     }
@@ -104,14 +104,14 @@
   &__quote--name {
     @include subheader;
     font-weight: 600;
-    @media screen and (min-width: 768px) {
+    @include tablet {
       padding-left: 3.5rem;
       padding-right: 3.5rem;
       font-size: 0.875rem;
       line-height: 1.375rem;
       font-weight: 600;
     }
-    @media screen and (min-width: 1280px) {
+    @include desktop {
       padding-left: 10.875rem;
       width: 78%;
     }
@@ -124,12 +124,12 @@
     @include subheader;
     @include padding-headline;
     color: $bandsite-black;
-    @media screen and (min-width: 768px) {
+    @include tablet {
       padding-left: 3.5rem;
       padding-bottom: 1rem;
       font-weight: 600;
     }
-    @media screen and (min-width: 1280px) {
+    @include desktop {
       padding-left: 10.875rem;
     }
   }
@@ -139,22 +139,22 @@
     flex-direction: column;
     @include layout;
     color: $bandsite-black;
-    @media screen and (min-width: 768px) {
+    @include tablet {
       flex-direction: row;
       padding-left: 3.5rem;
       padding-right: 3.5rem;
     }
-    @media screen and (min-width: 1280px) {
+    @include desktop {
       padding-left: 10.875rem;
     }
   }
 
   &__para--one {
     @include body-copy;
-    @media screen and (min-width: 768px) {
+    @include tablet {
       width: 48%;
     }
-    @media screen and (min-width: 1280px) {
+    @include desktop {
       width: 43%;
     }
   }
@@ -162,12 +162,12 @@
   &__para--two {
     @include body-copy;
     @include padding-component;
-    @media screen and (min-width: 768px) {
+    @include tablet {
       padding-top: 0;
       padding-left: 1.5rem;
       width: 52%;
     }
-    @media screen and (min-width: 1280px) {
+    @include desktop {
       width: 45%;
     }
   }
@@ -180,22 +180,22 @@
     @include layout;
     @include padding-headline;
     color: $bandsite-black;
-    @media screen and (min-width: 1280px) {
+    @include desktop {
       margin-left: 7.688rem;
     }
   }
 
   &__container {
     @include layout;
-    @media screen and (min-width: 768px) {
+    @include tablet {
       padding-bottom: 0.688rem;
     }
-    @media screen and (min-width: 1280px) {
+    @include desktop {
       margin-left: 7.688rem;
       margin-right: 7.688rem;
     }
     &-row {
-      @media screen and (min-width: 768px) {
+      @include tablet {
         display: flex;
       }
     }
@@ -204,7 +204,7 @@
   &__image {
     width: 100%;
     @include padding-images;
-    @media screen and (min-width: 768px) {
+    @include tablet {
       padding-bottom: 1.5rem;
       padding-right: 1.5rem;
       width: 33%;
@@ -213,7 +213,7 @@
     &--last {
       width: 100%;
       @include padding-images;
-      @media screen and (min-width: 768px) {
+      @include tablet {
         padding-bottom: 1.5rem;
         width: 33%;
       }
@@ -232,7 +232,7 @@
   margin-top: 1.5rem;
   margin-right: 0.75rem;
   margin-left: 0;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: 3rem;
     height: 3rem;
     margin-top: 1.75rem;
@@ -246,7 +246,7 @@
     @include layout;
     @include padding-headline;
     color: $bandsite-black;
-    @media screen and (min-width: 1280px) {
+    @include desktop {
       margin-left: 7.688rem;
     }
   }
@@ -257,7 +257,7 @@
     align-items: flex-start;
     width: 100%;
     @include layout;
-    @media screen and (min-width: 768px) {
+    @include tablet {
       align-items: center;
     }
   }
@@ -265,10 +265,10 @@
   &__container {
     display: flex;
     justify-content: center;
-    @media screen and (min-width: 768px) {
+    @include tablet {
       margin-right: 2.75rem;
     }
-    @media screen and (min-width: 1280px) {
+    @include desktop {
       margin-right: 5rem;
     }
   }
@@ -277,7 +277,7 @@
     display: flex;
     flex-direction: column;
     padding-bottom: 0.5rem;
-    @media screen and (min-width: 768px) {
+    @include tablet {
       align-items: flex-end;
     }
 
@@ -297,7 +297,7 @@
       background-color: $bandsite-black;
       border-radius: 4px;
       margin-bottom: 0.75rem;
-      @media screen and (min-width: 768px) {
+      @include tablet {
         width: 9rem;
         margin-right: 0;
       }
@@ -316,12 +316,12 @@
     margin-bottom: 0.75rem;
     padding: 0.6rem;
     width: 75vw;
-    @media screen and (min-width: 768px) {
+    @include tablet {
       width: 65vw;
       padding: 1rem;
       margin-bottom: 1rem;
     }
-    @media screen and (min-width: 1280px) {
+    @include desktop {
       width: 34vw;
     }
   }
@@ -337,12 +337,12 @@
     padding: 0.6rem;
     height: 6rem;
     width: 75vw;
-    @media screen and (min-width: 768px) {
+    @include tablet {
       width: 65vw;
       padding: 1rem;
       margin-bottom: 1.5rem;
     }
-    @media screen and (min-width: 1280px) {
+    @include desktop {
       width: 34vw;
     }
   }
@@ -368,10 +368,10 @@ label {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    @media screen and (min-width: 768px) {
+    @include tablet {
       width: 73vw;
     }
-    @media screen and (min-width: 1280px) {
+    @include desktop {
       margin-left: 31vw;
     }
   }
@@ -380,10 +380,10 @@ label {
     border-top: 1px solid $mercury;
     display: flex;
     width: 90vw;
-    @media screen and (min-width: 768px) {
+    @include tablet {
       width: 72vw;
     }
-    @media screen and (min-width: 1280px) {
+    @include desktop {
       width: 38.5vw;
     }
   }
@@ -391,7 +391,7 @@ label {
   &__container {
     display: flex;
     margin-bottom: 1rem;
-    @media screen and (min-width: 768px) {
+    @include tablet {
       width: 73vw;
       @include body-copy;
     }
@@ -400,10 +400,10 @@ label {
   &__card {
     display: flex;
     flex-direction: column;
-    @media screen and (min-width: 768px) {
+    @include tablet {
       width: 65vw;
     }
-    @media screen and (min-width: 1280px) {
+    @include desktop {
       width: 34vw;
     }
   }
@@ -417,7 +417,7 @@ label {
     height: 2.25rem;
     border-radius: 50%;
     background-size: cover;
-    @media screen and (min-width: 768px) {
+    @include tablet {
       width: 3rem;
       height: 3rem;
     }
@@ -428,7 +428,7 @@ label {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    @media screen and (min-width: 768px) {
+    @include tablet {
       padding-top: 1.25rem;
       padding-bottom: 0.5rem;
     }
@@ -447,10 +447,10 @@ label {
   &__input {
     display: flex;
     width: 75vw;
-    @media screen and (min-width: 768px) {
+    @include tablet {
       width: 66vw;
     }
-    @media screen and (min-width: 1280px) {
+    @include desktop {
       width: 35vw;
     }
   }
