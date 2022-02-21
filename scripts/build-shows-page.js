@@ -61,7 +61,32 @@ function displayShows(shows) {
 
   let showListDateInfo = document.createElement("li");
   showListDateInfo.classList.add("shows__list-date--info");
-  showListDateInfo.innerText = shows.date;
+  let numberDate = parseInt(shows.date);
+  let newDate = new Date(numberDate);
+  let daysofWeek = ["Sun", "Mon", "Tue", "Wed", "Thurs", "Fri", "Sat"];
+  let months = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "June",
+    "July",
+    "Aug",
+    "Sept",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
+  showListDateInfo.innerText =
+    daysofWeek[newDate.getDay()] +
+    " " +
+    months[newDate.getMonth()] +
+    " " +
+    newDate.getDate() +
+    " " +
+    newDate.getFullYear();
+
   showList.appendChild(showListDateInfo);
 
   let showListVenue = document.createElement("li");

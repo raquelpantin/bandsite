@@ -35,11 +35,11 @@ function displayComment(com) {
   commentListDate.classList.add("user-comment__list-item--date");
   let newDate = new Date(com.timestamp);
   commentListDate.innerHTML =
-    ("0" + (new Date(com.timestamp).getMonth() + 1)).slice(-2) +
+    ("0" + newDate.getMonth() + 1).slice(-2) +
     "/" +
-    new Date(com.timestamp).getDate() +
+    newDate.getDate() +
     "/" +
-    new Date(com.timestamp).getFullYear();
+    newDate.getFullYear();
   commentList.appendChild(commentListDate);
 
   let comment = document.createElement("p");
